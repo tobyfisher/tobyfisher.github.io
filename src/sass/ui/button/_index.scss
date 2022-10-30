@@ -1,0 +1,61 @@
+@use "mixins" as *;
+
+
+.button,
+button {
+	@include flex(center, center);
+
+	// Don't let button text wrap
+	white-space: nowrap;
+
+	// resets
+	outline: 0; // remove glow effect
+	border-radius: 8px;
+	cursor: pointer;
+
+	// sizes - standard:
+	padding: 0 1rem; // increase hit area
+	height: 3rem;
+
+	&.small {
+		font-size: 80%;
+		height: auto;
+		padding: 3px 1rem;
+	}
+
+	// use background-colour because of icon buttons (i-btn)
+	background-color: var(--btn-base);
+	color:#fff;
+
+	// a little UI help to improve accessibility
+	border: 3px solid transparent;
+
+	// if 'button' is used on <a>
+	// need to override some things on anchors
+	text-decoration: none;
+
+	&:disabled {
+		pointer-events: none; // disable pseudos
+		cursor:default;
+		background:#999;
+	}
+
+	&:hover,
+	&:focus {
+		color:#fff;
+		border-color: rgba(255, 255, 255, 0.5);
+		background-color:var(--btn-over);
+	}
+
+	// selected is the same for both normal and dull
+	&:active,
+	&.selected {
+		border-color: var(--kognyt-blue);
+		color: #000;
+		background-color: #eee;
+	}
+
+	&.is-green {
+		background-color:var(--btn-green);
+	}
+}

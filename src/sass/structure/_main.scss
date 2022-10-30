@@ -1,0 +1,5 @@
+@use "vars" as *;
+main {
+	min-height: 100vh;
+	padding: $content-pad 0;
+}

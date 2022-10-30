@@ -1,0 +1,49 @@
+@use "mixins" as *;
+@use "vars" as *;
+
+h1,
+h2,
+h3,
+h4,
+p {
+	// Help prevent overflow of long words/names/URLs
+	overflow-wrap: break-word;
+}
+
+h1 {
+	@include font-size(40);
+	line-height: 1.2;
+	font-weight: 300;
+	padding:0 0 $content-pad 0;
+}
+
+h2 {
+	@include font-size(32);
+	line-height: 1.2;
+	padding:0 0 $content-pad 0;
+}
+
+h3, h4 {
+	@include font-size(24);
+	padding:0 0 $content-pad-small 0;
+}
+h3 {
+	color:var(--kognyt-green);
+}
+
+p {
+	@include font-size(18);
+	padding:0 0 $content-pad 0;
+}
+
+@include tablet(){
+	h1 {
+		font-size: max( 1.5rem, 4vw );
+	}
+	h2 {
+		font-size: max( 1.4rem, 3.5vw );
+	}
+	h3, h4 {
+		font-size: max( 1.2rem, 2.5vw );
+	}
+}

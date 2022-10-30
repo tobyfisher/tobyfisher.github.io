@@ -1,0 +1,19 @@
+@use "vars" as *;
+hr {
+	display: block;
+	border: 0;
+	margin: $content-pad-small 0;
+	border-bottom: 1px solid var(--kognyt-green);
+
+	&.divider {
+		margin: $content-pad 0;
+		border-bottom-width: 4px;
+	}
+
+	&.soft {
+		margin: $content-pad-small 0;
+		border-bottom-width: 2px;
+		border-bottom-style: dotted;
+	}
+
+}

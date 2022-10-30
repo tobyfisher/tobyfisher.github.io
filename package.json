@@ -1,0 +1,26 @@
+{
+  "name": "openeyes-website",
+  "version": "2.0.0",
+  "description": "CLI builds",
+  "private": true,
+  "author": {
+    "name": "Toby Fisher",
+    "url": "https://knowego.com"
+  },
+  "browserslist": [
+    "Chrome > 88",
+    "Edge > 88",
+    "Safari > 14.1"
+  ],
+  "scripts": {
+    "jekyll": "bundle exec jekyll b",
+    "css:build": "sass ./src/sass/oe.scss:./assets/css/oe.css -s compressed --load-path=src/sass --stop-on-error --no-source-map --watch",
+    "js": "rollup --config --watch"
+  },
+  "devDependencies": {
+    "sass": "1.55.0"
+  },
+  "engines": {
+    "node": "18.12.0"
+  }
+}

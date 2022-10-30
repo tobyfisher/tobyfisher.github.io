@@ -1,0 +1,47 @@
+@use "mixins" as *;
+@use "vars" as *;
+
+.flex {
+	@include flex( center, space-between );
+}
+
+.flex-l {
+	@include flex( center, flex-start );
+}
+
+.flex-r {
+	@include flex( center, flex-end );
+}
+
+.flex-t {
+	@include flex( flex-start, space-between) ;
+}
+
+.flex-c {
+	@include flex( center, center );
+}
+
+.flex-t-l {
+	@include flex(flex-start, flex-start );
+}
+.flex-t-r {
+	@include flex(flex-start, flex-end );
+}
+
+// Flex ITem
+.fit-1 {
+	flex:1 1 0;
+}
+
+.fit-1-2 {
+	flex:2 1 0;
+}
+
+// gaps
+.fg-pad {
+	gap: $content-pad;
+}
+
+.fg-small {
+	gap: $content-pad-small;
+}

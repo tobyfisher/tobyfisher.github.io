@@ -1,0 +1,24 @@
+@use "sass:math";
+
+// Create REM font-sizes. based on 16px base font-size
+// @access public
+// @param {sizePixel} $sizePixel - size as px
+@mixin font-size($sizePixel) {
+	font-size: math.div($sizePixel, 16 ) + rem;
+}
+// ------------------------------ Patterns
+// Flex
+// vertical | horizontal
+@mixin flex($v,$h) {
+	display: flex;
+	justify-content: $h;
+	align-items: $v;
+}
+
+// ------------------------------ Queries
+// Media queries
+@mixin tablet() {
+	@media only screen and (max-width: 900px) {
+		@content;
+	}
+}

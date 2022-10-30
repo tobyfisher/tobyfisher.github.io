@@ -1,0 +1,46 @@
+@use "mixins" as *;
+@use "vars" as *;
+
+.search-find {
+	color:#fff;
+	background: linear-gradient( 90deg, var(--kognyt-green), var(--kognyt-blue));
+	margin-bottom:$content-pad;
+}
+
+.search-input {
+	position: relative;
+	height:3rem;
+	background: #fff;
+	border:1px solid #000;
+	border-radius: 3rem;
+
+	@include flex(center, flex-start);
+
+	input {
+		height:100%;
+		width:100%;
+		margin:0 3rem;
+		@include font-size(18);
+		font-weight: 600;
+
+		// turn off browser UI defaults
+		// (basically because of Safari!)
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+
+		&:focus-visible {
+			outline: none;
+		}
+	}
+
+	.search-icon {
+		position: absolute;
+		top:0;
+		left:0;
+		bottom:0;
+		width:3rem;
+		background: center/1.5rem var(--i-search-green) no-repeat;
+	}
+
+}
