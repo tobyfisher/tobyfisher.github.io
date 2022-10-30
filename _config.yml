@@ -1,0 +1,25 @@
+# Jekyll site settings
+title: OpenEyes
+email: openeyes@apperta.org
+description: > # this means to ignore newlines until "baseurl:"
+  OpenEyes™ is an Electronic Medical Record (EMR) application for ophthalmology, which enables clinicians to access all of the information they need about their patients in one place.
+keywords: OpenEyes, Apperta OpenEyes, OpenEyes ophthalmology, OpenEyes EPR
+
+#config
+baseurl: "/" # the subpath of your site, e.g. /blog
+safe: true
+include: ["assets"]
+exclude: ["README.md"]
+
+# github
+url: "https://tobyfisher.github.io" # the base hostname & protocol for your site
+github_username:  tobyfisher
+
+# social
+twitter_username: openeyes_oef
+
+# default Github Pages Markdown setting, just a reminder
+markdown: kramdown
+kramdown:
+  input: GFM
+
