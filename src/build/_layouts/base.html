@@ -12,10 +12,10 @@
 	<meta property="og:image" content="/assets/img/openeyes-social.jpg"/>
 	<meta property="og:type" content="website"/>
 
-	<script src="/src/build/assets/js/oe.js" defer></script>
-	<script src="/src/build/assets/js/offline-worker.js"></script>
+	<script src="/assets/js/oe.js" defer></script>
+	<script src="/assets/js/offline-worker.js"></script>
 
-    <link rel="stylesheet" href="/src/build/assets/css/oe.css"/>
+    <link rel="stylesheet" href="/assets/css/oe.css"/>
 </head>
 <body>
 <header role="banner">
@@ -47,8 +47,6 @@
 <main>
 	{{ content }}
 </main>
-<footer role="contentinfo">
-	Footer stuff
-</footer>
+{% include footer.html %}
 </body>
 </html>

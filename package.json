@@ -13,8 +13,8 @@
     "Safari > 14.1"
   ],
   "scripts": {
-    "jekyll": "bundle exec jekyll b",
-    "css:build": "sass ./src/sass/oe.scss:./assets/css/oe.css -s compressed --load-path=src/sass --stop-on-error --no-source-map --watch",
+    "jekyll": "bundle exec jekyll b --watch",
+    "css:build": "sass src/sass/oe.scss:src/build/assets/css/oe.css -I src/sass -s compressed --stop-on-error --watch",
     "js": "rollup --config --watch"
   },
   "devDependencies": {

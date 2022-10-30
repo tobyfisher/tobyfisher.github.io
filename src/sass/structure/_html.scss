@@ -3,10 +3,10 @@ html {
 	// Ensures greater control of UI display.
 	// All other font-sizes are set as rem, this could be changed here if needed
 
-	font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial sans-serif;
+	font: 500 16px/1.5 "Helvetica Neue", Helvetica, Arial sans-serif;
 
 	// service worker is handling font load
 	&.fonts-loaded {
-		font-family: "Open Sans", sans-serif;
+		font-family: "Roboto", sans-serif;
 	}
 }
