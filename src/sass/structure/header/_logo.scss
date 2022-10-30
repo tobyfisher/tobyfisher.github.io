@@ -1,0 +1,21 @@
+@use "vars" as *;
+@use "mixins" as *;
+
+header {
+	.logo-nav {
+		height: 60px;
+		max-width:$content-width;
+		margin:0 auto;
+		padding:0 $content-pad;
+		@include flex(center, space-between);
+	}
+
+	// SVG
+	.logotype {
+		width: min( 120px, 16vw);
+		margin:0 50px 0 0;
+		g {
+			fill: rgb(50,50,80);
+		}
+	}
+}

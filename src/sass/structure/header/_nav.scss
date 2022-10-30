@@ -1,0 +1,38 @@
+@use "vars" as *;
+@use "mixins" as *;
+
+header {
+	.top-nav {
+		@include flex(center, space-between);
+		flex:1 1 0;
+
+		@include tablet(){
+			display:none;
+			position:absolute;
+			top:80px;
+			left:0;
+			right:0;
+			flex-direction: column;
+			align-items: flex-start;
+			padding:$content-pad;
+			background:#fff;
+			z-index:9;
+			border-bottom:2px solid var(--kognyt-green);
+
+			.primary {
+				flex-direction: column;
+				align-items: flex-start;
+				margin:0 0 $content-pad 0;
+			}
+		}
+	}
+
+	.overlay-menu-btn {
+		display: none;
+		user-select: none;
+		cursor: pointer;
+		* {
+			pointer-events: none;
+		}
+	}
+}
