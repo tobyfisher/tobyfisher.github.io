@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
 keywords: OpenEyes, Apperta OpenEyes, OpenEyes ophthalmology, OpenEyes EPR, OpenEyes Foundation
 
 #config
-source: "src/build/" # jekyll build folder
+source: "docs/" # has to be docs/ this is ALL Github Pages supports
 baseurl: "/" # the subpath of your site, e.g. /blog
 safe: true
 include: ["assets"]

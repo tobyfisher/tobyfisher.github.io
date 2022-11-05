@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "jekyll": "bundle exec jekyll b --watch",
-    "css:build": "sass src/sass/oe.scss:src/build/assets/css/oe.css -I src/sass -s compressed --stop-on-error --watch",
+    "css:build": "sass src/sass/oe.scss:docs/assets/css/oe.css -I src/sass -s compressed --stop-on-error --watch",
     "js": "rollup --config --watch"
   },
   "devDependencies": {
