@@ -1,17 +1,12 @@
 // CSS vars
-$-icons: ("search-green");
+$-icons: ("search");
 
 :root {
-	--kognyt-green: #319c00;
-	--kognyt-blue: #0568c9;
-	--kognyt-mid: #41835c;
+	--bg-html: rgb(245,240,240);
 
-	--txt-link: #001fad;
-
-	--btn-base: #105186;
-	--btn-over: #015cc2;
-
-	--btn-green: #387e38;
+	--btn-text: #fff;
+	--btn-base: rgb(65,127,224);
+	--btn-blue: rgb(13, 103, 210);
 
 	@each $i in $-icons {
 		--i-#{$i}: url("../svg/in-css/#{$i}.svg");

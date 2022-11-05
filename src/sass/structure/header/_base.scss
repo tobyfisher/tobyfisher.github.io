@@ -9,8 +9,11 @@ header {
 	width: 100%;
 	z-index: 9;
 
+	overflow-x: hidden;
+
 	@include tablet(){
+		// remove the fancy FXs on the tablets/phones
 		backdrop-filter: none;
-		background-color: #fff;
+		background-color: rgb(253,245,245);
 	}
 }

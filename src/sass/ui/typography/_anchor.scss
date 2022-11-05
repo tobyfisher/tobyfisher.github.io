@@ -1,17 +1,16 @@
 a {
 	color:inherit;
 	text-decoration: underline;
-	font-weight: 600;
 
 	&:hover,
 	&:focus {
-		color:var(--txt-link);
+		color:aqua;
 		text-decoration: none;
 	}
 
 	&:active {
 		color:#fff;
-		background:var(--kognyt-blue);
+		background:lightcyan;
 	}
 }
 

@@ -1,0 +1,12 @@
+@use "vars" as *;
+@use "mixins" as *;
+
+// wrapper for logo and page navigation
+// controls height for logo / nav area and is centered within maximum widht
+.lg-nv-hd {
+	@include flex(center, space-between);
+	height: $header-height;
+	max-width:$content-width;
+	padding:0 $content-pad;
+	margin:0 auto;
+}
