@@ -9,9 +9,7 @@ header {
 	width: 100%;
 	z-index: 9;
 
-	overflow-x: hidden;
-
-	@include tablet(){
+	@include collapseNav(){
 		// remove the fancy FXs on the tablets/phones
 		backdrop-filter: none;
 		background-color: rgb(253,245,245);

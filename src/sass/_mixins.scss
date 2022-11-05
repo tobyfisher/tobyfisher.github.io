@@ -17,8 +17,8 @@
 
 // ------------------------------ Queries
 // Media queries
-@mixin tablet() {
-	@media only screen and (max-width: 900px) {
+@mixin collapseNav() {
+	@media only screen and (max-width: 799px) {
 		@content;
 	}
 }

@@ -1,0 +1,42 @@
+@use "vars" as *;
+@use "mixins" as *;
+
+.pages-nav {
+	// override defaults
+	a {
+		flex: 1 1 0;
+		white-space: nowrap;
+		@include flex(center, center);
+		height: 100%;
+		padding: 0 20px;
+		@include font-size(13);
+		font-weight: 700;
+		text-decoration: none;
+
+		transition: color 0.4s ease-out, background-color 0.4s ease-in-out;
+
+		.active,
+		&:hover,
+		&:focus {
+			color: var(--btn-blue);
+			background: var(--bg-html);
+		}
+
+		&:active {
+			color: var(--btn-text);
+			background: var(--btn-base);
+		}
+
+		@include collapseNav(){
+			justify-content: flex-start;
+			padding: 0 10px 0 40px;
+			@include font-size(15);
+
+			border-top: 1px dotted var(--line);
+
+			&:first-child {
+				 border:none;
+			}
+		}
+	}
+}

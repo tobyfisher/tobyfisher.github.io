@@ -1,0 +1,36 @@
+@use "vars" as *;
+@use "mixins" as *;
+
+header {
+	.pages-nav-menu-btn {
+		display: none;
+		user-select: none;
+		cursor: pointer;
+		* {
+			pointer-events: none;
+		}
+
+		@include collapseNav(){
+			display: block;
+		}
+	}
+
+	// SVG
+	.nav-menu-btn {
+		width:60px;
+		height:60px;
+		background: #fff;
+
+		// 2 icons with SVG
+		.svg-menu-icon {
+			fill: var(--btn-base);
+		}
+
+		.svg-close-icon {
+
+		}
+
+
+	}
+}
+

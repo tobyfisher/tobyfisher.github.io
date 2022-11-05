@@ -36,7 +36,7 @@ p {
 	padding:0 0 $content-pad 0;
 }
 
-@include tablet(){
+@include collapseNav(){
 	h1 {
 		font-size: max( 1.5rem, 4vw );
 	}

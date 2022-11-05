@@ -6,7 +6,9 @@ $-icons: ("search");
 
 	--btn-text: #fff;
 	--btn-base: rgb(65,127,224);
-	--btn-blue: rgb(13, 103, 210);
+	--btn-blue: rgb(13, 103, 230);
+
+	--line: rgb(220, 220, 220);
 
 	@each $i in $-icons {
 		--i-#{$i}: url("../svg/in-css/#{$i}.svg");
