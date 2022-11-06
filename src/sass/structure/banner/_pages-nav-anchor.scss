@@ -15,7 +15,6 @@
 
 		transition: color 0.4s ease-out, background-color 0.4s ease-in-out;
 
-		&.active,
 		&:hover,
 		&:focus {
 			color: var(--btn-blue);
@@ -25,6 +24,13 @@
 		&:active {
 			color: var(--btn-text);
 			background: var(--btn-base);
+		}
+
+		// open, viewing the page
+		&.active{
+			pointer-events: none;
+			color: var(--btn-blue);
+			background: linear-gradient(rgba(255,255,255,0) 25%, var(--bg-html) 90%);
 		}
 
 		@include collapseNav(){
