@@ -1,0 +1,7 @@
+@use "vars" as *;
+// wrapper to center content in page layout
+.ctr {
+	max-width: $content-width;
+	margin:0 auto;
+	padding: $content-pad-small 0;
+}

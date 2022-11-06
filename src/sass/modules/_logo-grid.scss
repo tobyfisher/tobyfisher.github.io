@@ -1,0 +1,17 @@
+@use "vars" as *;
+
+.logo-grid {
+	display: grid;
+	grid: auto-flow / repeat(3, 1fr);
+	gap: 20px;
+
+	// to handle all the logo variations
+	background: white;
+	padding: $content-pad;
+	box-shadow: 2px 2px 8px #ccc;
+
+	img {
+		width: 100%;
+		object-fit: contain;
+	}
+}
