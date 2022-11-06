@@ -11,7 +11,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+    <link rel="canonical" href="{{ site.url }}{{ page.name | replace: '.html','' |  replace: '.md','' }}">
 
     <meta name="msapplication-TileColor" content="#999999">
     <meta name="theme-color" content="#ffffff">
@@ -64,10 +64,6 @@
                 {% assign gitslug = page.name | remove: ".html" | prepend: "/" %}
                 <a href="{{ nav.url }}"{% if gitslug  == nav.url %} class="active"{% endif %}>{{ nav.btn }}</a>
             {% endfor %}
-
-            <div>
-                {{ gitslug }}
-            </div>
         </nav>
 
         <!-- JS controlled overlay nav when navigation collapses down on smaller devices -->
