@@ -56,8 +56,18 @@
 
         <nav class="pages-nav">
             {% for nav in site.data.page-navigation %}
-                <a href="{{ nav.url }}"{% if page.url == nav.url %} class="active"{% endif %}>{{ nav.btn }}</a>
+                {% comment %}
+                Note: Jekyll page.url will use a trailing slash BUT GitHub pages does not! FFS!
+                Github Pages does this: oe.org/users (this will 404: oe.org/users/)
+                btw: this is still there on ghPages: oe.org/users.html
+                {% endcomment %}
+                {% assign gitslug = page.name | remove: ".html" | prepend: "/" %}
+                <a href="{{ nav.url }}"{% if gitslug  == nav.url %} class="active"{% endif %}>{{ nav.btn }}</a>
             {% endfor %}
+
+            <div>
+                {{ gitslug }}
+            </div>
         </nav>
 
         <!-- JS controlled overlay nav when navigation collapses down on smaller devices -->
