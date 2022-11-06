@@ -1,5 +1,6 @@
 @use "vars" as *;
 main {
+	// push the footer out of view
 	min-height: 100vh;
 	padding: $content-pad 0;
 }

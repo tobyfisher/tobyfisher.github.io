@@ -1,0 +1,8 @@
+@use "vars" as *;
+
+// <header> within <main>
+.page-hd {
+	max-width: $content-width;
+	margin:0 auto;
+	padding: $content-pad;
+}

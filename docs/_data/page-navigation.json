@@ -1,0 +1,30 @@
+[
+  {
+    "url": "/about-openeyes/",
+    "btn": "About"
+  },
+  {
+    "url": "/governance/",
+    "btn": "Governance"
+  },
+  {
+    "url": "/users/",
+    "btn": "Used by"
+  },
+  {
+    "url": "/docs/",
+    "btn": "Docs"
+  },
+  {
+    "url": "/latest/",
+    "btn": "Latest"
+  },
+  {
+    "url": "/faqs/",
+    "btn": "FAQs"
+  },
+  {
+    "url": "/contact/",
+    "btn": "Contact"
+  }
+]

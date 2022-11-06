@@ -1,0 +1,31 @@
+// ** Copyright (C) 2020, OpenEyes Foundation. This file is part of OpenEyes.
+// ** OpenEyes is free software; and is distributed, WITHOUT ANY WARRANTY under the terms of AGPL 3.0 licence.
+
+.hidden {
+    display: none;
+}
+
+// visually hidden but still accessible and readable
+// use for <h1>
+.visuallyhidden {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.inline {
+	display:inline-block;
+}
+
+// use visibility to 'hide' a <tr>
+// DOM is hidden & space occupied is removed (as if display: none).
+// BUT! - rows and columns are still calculated as though the cells
+// in the collapsed row(s) or column(s) are still present.
+.tr-collapse {
+	visibility: collapse;
+}

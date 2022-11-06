@@ -1,13 +1,13 @@
 @use "vars" as *;
 @use "mixins" as *;
 
-header {
+.site-banner {
 	// OpenEyes SVG
 	.logotype {
 		width: min( 120px, 25vw);
 		margin:0 50px 0 0;
 		g {
-			fill: rgb(50,50,80);
+			fill: #000;
 		}
 	}
 }

@@ -1,7 +1,7 @@
 @use "vars" as *;
 @use "mixins" as *;
 
-header {
+.site-banner {
 	backdrop-filter:saturate(180%)saturate(180%) blur(12px);
 	background-color: rgba(255,250,250,0.5);
 	position: sticky;

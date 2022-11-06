@@ -6,6 +6,14 @@
 @mixin font-size($sizePixel) {
 	font-size: math.div($sizePixel, 16 ) + rem;
 }
+
+// for use on minimum width devices allow some flexiblilty
+// in the font size, e.g. ( 16, 4vw )
+@mixin font-size-responsive( $minPixel, $responsive ){
+	font-size: max( #{math.div($minPixel, 16 ) + rem}, #{$responsive} );
+}
+
+
 // ------------------------------ Patterns
 // Flex
 // vertical | horizontal

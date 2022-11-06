@@ -1,0 +1,29 @@
+@use "vars" as *;
+@use "mixins" as *;
+
+.pages-nav {
+	@include flex(stretch, flex-end);
+	height: 100%;
+
+	@include collapseNav() {
+		display: none;
+		// remove height restrictions
+		height: auto;
+		// stack the navigation
+		flex-direction: column;
+		// match the header
+		background-color: rgb(253, 245, 245);
+
+		// make an expandable overlay menu
+		position: fixed;
+		top: $header-height;
+		left: 0;
+		right: 0;
+		bottom: 20vh; // allowing for Phone OS stuff
+
+		// in-case new navigation is added at a later date
+		overflow-y: auto;
+
+		box-shadow: 0 4px 8px #ccc;
+	}
+}

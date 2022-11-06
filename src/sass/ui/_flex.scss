@@ -21,27 +21,18 @@
 	@include flex( center, center );
 }
 
-.flex-t-l {
-	@include flex(flex-start, flex-start );
-}
-.flex-t-r {
-	@include flex(flex-start, flex-end );
-}
-
-// Flex ITem
-.fit-1 {
+// Flex Item
+.fit-fill {
 	flex:1 1 0;
 }
-
-.fit-1-2 {
+.fill-double {
 	flex:2 1 0;
 }
 
 // gaps
-.fg-pad {
+.gap-ctp {
 	gap: $content-pad;
 }
-
-.fg-small {
+.gap-ctps {
 	gap: $content-pad-small;
 }

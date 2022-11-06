@@ -1,34 +1,37 @@
 @use "mixins" as *;
 @use "vars" as *;
 
-h1,
+// h1 is reserved for site name in header
 h2,
 h3,
 h4,
 p {
 	// Help prevent overflow of long words/names/URLs
 	overflow-wrap: break-word;
-}
 
-h1 {
-	@include font-size(40);
-	line-height: 1.2;
-	font-weight: 300;
-	padding:0 0 $content-pad 0;
+	b, strong {
+		font-weight: 500;
+	}
 }
 
 h2 {
-	@include font-size(32);
-	line-height: 1.2;
+	@include font-size(36);
+	font-weight: 300;
+	line-height: 1.3;
 	padding:0 0 $content-pad 0;
 }
 
-h3, h4 {
+h3 {
+	@include font-size(28);
+	font-weight: 300;
+	line-height: 1.3;
+	padding:0 0 $content-pad 0;
+}
+
+
+h4 {
 	@include font-size(24);
 	padding:0 0 $content-pad-small 0;
-}
-h3 {
-	color:var(--kognyt-green);
 }
 
 p {
@@ -36,14 +39,20 @@ p {
 	padding:0 0 $content-pad 0;
 }
 
+// responsive typography on smaller devices
 @include collapseNav(){
-	h1 {
-		font-size: max( 1.5rem, 4vw );
-	}
 	h2 {
-		font-size: max( 1.4rem, 3.5vw );
+		@include font-size-responsive( 26, 5vw)
 	}
-	h3, h4 {
-		font-size: max( 1.2rem, 2.5vw );
+	h3 {
+		@include font-size-responsive( 22, 4vw)
 	}
+	h4 {
+		@include font-size-responsive( 18, 3.5vw)
+	}
+	p {
+		@include font-size(14);
+	}
+
+
 }
