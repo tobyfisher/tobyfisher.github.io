@@ -3,25 +3,32 @@
 
 
 footer {
-	background-color: #eee;
-	@include font-size(12);
-	color: #666;
-}
+	background: var(--bg-footer);
+	@include font-size(11);
+	color: #888;
 
-.footer-content {
-	margin: 0 auto;
-	max-width: $content-width;
-	padding: $content-pad;
+	.footer-content {
+		margin: 0 auto;
+		padding: $content-pad;
+		max-width: $content-width;
 
-	@include flex(flex-start, space-between);
+		@include flex( flex-start, space-between);
 
-	.legals {
-		flex: 1 1 0;
-		align-self: flex-end;
+
+		.ft-content {
+			flex: 2 1 0;
+			margin:0 0 0 20px;
+			padding:0 0 0 20px;
+
+			.legals {
+				@include font-size(10);
+			}
+		}
 	}
 
-	.footer-nav {
-		flex: 2 1 0;
+	.logotype {
+		width: min( 200px, 40vw);
+		margin:0 50px 0 0;
+		fill: white;
 	}
-
 }
