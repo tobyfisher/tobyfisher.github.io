@@ -9,14 +9,17 @@
 	// to handle all the logo variations
 	background: white;
 	padding: $content-pad;
+	margin: 0 0 $content-pad;
 	box-shadow: 2px 2px 8px #ccc;
 
 	img {
 		width: 100%;
 		object-fit: scale-down;
+		height: 100%;
+		padding: 5px;
 	}
 
 	@include collapseNav(){
-		grid: auto-flow / repeat( auto-fill, minmax( 200px, 1fr));
+		grid: auto-flow / repeat( auto-fill, minmax( 140px, 1fr));
 	}
 }

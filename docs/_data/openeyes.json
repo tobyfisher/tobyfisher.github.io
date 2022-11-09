@@ -1,0 +1,12 @@
+{
+  "name": "OpenEyes",
+  "email": "openeyes@apperta.org",
+  "meta": {
+    "desc":"OpenEyes™ is an Electronic Medical Record (EMR) application for ophthalmology, which enables clinicians to access all of the information they need about their patients in one place.",
+    "keywords": "OpenEyes, Apperta OpenEyes, OpenEyes ophthalmology, OpenEyes EPR, OpenEyes Foundation",
+  },
+  "social": {
+    "twitter": "openeyes_oef",
+    "github": "appertafoundation/openeyes"
+  }
+}

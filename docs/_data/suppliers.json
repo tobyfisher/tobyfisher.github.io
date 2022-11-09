@@ -1,0 +1,22 @@
+{
+  "tkl": {
+    "code": "tkl",
+    "name": "ToukanLabs",
+    "www": "https://www.toukanlabs.com/",
+    "logo": "toukan-labs-logo.png",
+    "email": "sales@toukanlabs.com"
+  },
+  "abehr": {
+    "code": "abehr",
+    "name": "ABEHR Digital",
+    "www": "https://www.abehr.com/",
+    "logo": "abehr-logo.png"
+  },
+  "mdit": {
+    "code": "mdit",
+    "name": "MDit",
+    "www": "https://mdit.uk/",
+    "logo": "md-it.png"
+  }
+}
+

@@ -5,3 +5,9 @@
 	margin:0 auto;
 	padding: $content-pad-small 0;
 }
+
+.ctr-content {
+	max-width: $content-width;
+	margin:0 auto;
+	padding: $content-pad-small $content-pad;
+}

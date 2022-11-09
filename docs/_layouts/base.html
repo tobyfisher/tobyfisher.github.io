@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="description" content="{{ site.data.openeyes.meta.desc }}">
+    <meta name="keywords" content="{{ site.data.openeyes.meta.keywords }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>{{ page.title }} | {{ site.data.openeyes.name }}</title>
 
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -16,8 +16,8 @@
     <meta name="msapplication-TileColor" content="#999999">
     <meta name="theme-color" content="#ffffff">
 
-    <meta property="og:title" content="{{ site.title }}">
-    <meta property="og:description" content="{{ site.description }}"/>
+    <meta property="og:title" content="{{ site.data.openeyes.name }}">
+    <meta property="og:description" content="{{ site.data.openeyes.meta.desc }}"/>
     <meta property="og:image" content="/assets/img/openeyes-social.jpg"/>
     <meta property="og:type" content="website"/>
 
@@ -28,9 +28,9 @@
 </head>
 <body>
 <header class="site-banner" role="banner">
-    <h1 class="visuallyhidden">{{ site.title }}</h1>
+    <h1 class="visuallyhidden">{{ site.data.openeyes.name }}</h1>
     <div class="lg-nv-hd">
-        <a href="/" aria-label="{{ site.title }} logo">
+        <a href="/" aria-label="{{ site.data.openeyes.name }} logo">
             <svg xmlns="http://www.w3.org/2000/svg"
                  xml:space="preserve"
                  stroke-linejoin="round"

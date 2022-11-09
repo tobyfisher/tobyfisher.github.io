@@ -1,0 +1,22 @@
+@use "mixins" as *;
+@use "vars" as *;
+
+// split screen
+// simple pattern UI pattern
+// |- <div>
+// |- <div>
+.f-c-split {
+	@include flex(flex-start, space-between);
+	gap: #{$content-pad + $content-pad};
+
+	@include collapseNav() {
+		display: block;
+	}
+
+	> div {
+		flex: 1 1 0;
+		&.wide {
+			flex: 2 1 0;
+		}
+	}
+}

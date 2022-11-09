@@ -3,4 +3,10 @@ main {
 	// push the footer out of view
 	min-height: 100vh;
 	padding: $content-pad 0;
+
+	// Enable smooth scrolling
+	scroll-behavior: smooth;
+	@media only screen and (prefers-reduced-motion: reduce) {
+		scroll-behavior: auto;
+	}
 }

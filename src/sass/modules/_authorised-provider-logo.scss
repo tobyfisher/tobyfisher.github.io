@@ -1,0 +1,11 @@
+@use "vars" as *;
+
+// <img>
+.authorised-provider-logo {
+	width: 300px;
+	height: 200px;
+	object-fit: scale-down;
+	padding: $content-pad-small;
+	background: #fff;
+	border-radius: 10px;
+}

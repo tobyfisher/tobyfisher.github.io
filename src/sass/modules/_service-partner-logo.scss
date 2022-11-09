@@ -1,0 +1,10 @@
+@use "vars" as *;
+
+// <img> in <table>
+.service-partner-logo {
+	width: 100px;
+	min-height: 55px;
+	object-fit: scale-down;
+	padding: $content-pad-small;
+	background: #fff;
+}

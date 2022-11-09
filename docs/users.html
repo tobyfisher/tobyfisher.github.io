@@ -4,20 +4,87 @@ title: Implementations
 ---
 <header class="page-hd">
     <h2>Openeyes <b>Enterprise Implementation*</b> is used by <b>12 NHS Trusts</b>, in <b>30 Hospitals</b> with <b>4000+ Users</b></h2>
-    <div class=""><small>*Enterprise is an implementation installed by an <a href="/about#accredited-service-provider">Accredited Service Provider</a></small></div>
+    <div class=""><small>*Enterprise is an implementation installed by an <a href="#accredited-service-provider">Accredited Service Provider</a></small></div>
 </header>
 
 <section class="ctr">
     <div class="logo-grid">
-        {% for logo in site.data.user-logo-grid  %}
-            <img src="/assets/img/user-logos/{{ logo }}">
+        {% for user in site.oeusers %}
+            {% if user.type == "Enterprise" %}
+                <img alt="{{ user.name }}" src="/assets/img/user-logos/{{ user.logo }}">
+            {% endif %}
         {% endfor %}
     </div>
 </section>
 
-
 <h3 class="page-hd"><b>Community Implementations</b> of OpenEyes</h3>
-<h3 class="page-hd"><b>Accredited Service Providers</b> of OpenEyes</h3>
+
+<section class="ctr">
+    <div class="logo-grid">
+        {% for user in site.oeusers %}
+            {% if user.type == "Community" %}
+                <img alt="{{ user.name }}" src="/assets/img/user-logos/{{ user.logo }}">
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+<section class="ctr-content" id="accredited-service-provider">
+    <h3><b>Accredited Service Providers</b> of OpenEyes</h3>
+    <div class="f-c-split">
+        <div class="wide">
+            <p>While
+                <b>OpenEyes</b> is freely available as OpenSource, we strongly recommend that installations in a clinical environment are handled through our authorised professional services network. Our professional services partner
+                <a href="mailto:{{ site.data.suppliers.tkl.email }}?subject=OpenEyes">{{ site.data.suppliers.tkl.name }}</a>, can provide advice and pricing on accredited implementation and support services.
+            </p>
+        </div>
+        <div>
+            <a href="mailto:{{ site.data.suppliers.tkl.email }}?subject=OpenEyes">
+                <img alt="{{ site.data.suppliers.tkl.name }}"
+                     src="/assets/img/supplier-logos/{{ site.data.suppliers.tkl.logo }}"
+                     class="authorised-provider-logo">
+            </a>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <table>
+        <thead>
+        <tr>
+            <th>Implementation</th>
+            <th>User</th>
+            <th>Service partner</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for user in site.oeusers %}
+            <tr>
+                <td>{{ user.type }}</td>
+                <td><a href="{{ user.www }}" target="_blank">{{ user.name }}</a></td>
+                <td>
+                    <img class="service-partner-logo"
+                            {% case user.partnercode %}
+                                {% when "mdit" %}
+                                    src="/assets/img/supplier-logos/{{ site.data.suppliers.mdit.logo }}"
+                                {% when "abehr" %}
+                                    src="/assets/img/supplier-logos/{{ site.data.suppliers.abehr.logo }}"
+                                {% else %}
+                                    src="/assets/img/supplier-logos/{{ site.data.suppliers.tkl.logo }}"
+                            {% endcase %}
+                    >
+                </td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+</section>
+
+
+
+
 
 
 
