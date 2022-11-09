@@ -113,8 +113,8 @@
 	window.onresize = () => resizeThrottle.delay();
 
 	const navOverlay = {
-		btn: document.querySelector(".overlay-menu-btn"),
-		topNav: document.querySelector('.top-nav'),
+		btn: document.getElementById('js-menu-btn'),
+		pagesNav: document.getElementById('js-pages-nav'),
 		open: false,
 
 		/**
@@ -122,14 +122,14 @@
 		 */
 		init(){
 			// 2 different shapes in <svg> btn, menu and cross
-			this.svgMenu = this.btn.querySelector('.svg-menu');
-			this.svgMenuClose = this.btn.querySelector('.svg-menu-close');
+			this.svgMenu = this.btn.querySelector('.svg-menu-icon');
+			this.svgClose = this.btn.querySelector('.svg-close-icon');
 
 			/**
 			 * CSS Media Query for tablet collapse, must match CSS
 			 * on init, check to see if we to activate the menu
 			 */
-			const mediaQueryList = window.matchMedia("(max-width: 900px)");
+			const mediaQueryList = window.matchMedia("(max-width: 799px)");
 			if ( mediaQueryList.matches ) this.activate();
 
 			/**
@@ -146,7 +146,7 @@
 			/**
 			 * Event delegation on svg.overlay-menu-btn
 			 */
-			userDown('.overlay-menu-btn', () => this.change());
+			userDown('#js-menu-btn', () => this.change());
 		},
 
 		remove(){
@@ -168,9 +168,9 @@
 
 		show(){
 			this.open = true;
-			this.topNav.style.display = "flex";
+			this.pagesNav.style.display = "flex";
 			this.svgMenu.style.display = "none";
-			this.svgMenuClose.style.display = "block";
+			this.svgClose.style.display = "block";
 
 			// hmmm, not sure about this, depends on the overlay size and if it needs to scroll
 			// document.body.style.overflow = "hidden"
@@ -178,9 +178,9 @@
 
 		hide(){
 			this.open = false;
-			this.topNav.style.cssText = "";
+			this.pagesNav.style.cssText = "";
 			this.svgMenu.style.display = "block";
-			this.svgMenuClose.style.display = "none";
+			this.svgClose.style.display = "none";
 		}
 	};
 

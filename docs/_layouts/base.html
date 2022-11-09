@@ -42,7 +42,7 @@
 		    </svg>
         </a>
 
-        <nav class="pages-nav">
+        <nav class="pages-nav" id="js-pages-nav">
             {% for nav in site.data.page-navigation %}
                 {% comment %}
                 Note: Jekyll page.url will use a trailing slash BUT GitHub pages does not! FFS!
@@ -55,14 +55,16 @@
         </nav>
 
         <!-- JS controlled overlay nav when navigation collapses down on smaller devices -->
-        <div class="pages-nav-menu-btn" aria-hidden="true">
+        <div class="pages-nav-menu-btn" id="js-menu-btn" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="nav-menu-btn">
                 <g class="svg-menu-icon">
-                    <rect x="5" y="7" width="10" height="1.5"/>
-                    <rect x="5" y="10" width="10" height="1.5"/>
-                    <rect x="5" y="13" width="10" height="1.5"/>
+                    <rect x="5" y="6" width="10" height="1.5"/>
+                    <rect x="5" y="9" width="10" height="1.5"/>
+                    <rect x="5" y="12" width="10" height="1.5"/>
                 </g>
-                <polygon class="svg-close-icon" fill="white" style="display:none;" points="15.52 5.45 13.55 3.48 9.5 7.52 5.45 3.48 3.48 5.45 7.52 9.5 3.48 13.55 5.45 15.52 9.5 11.48 13.55 15.52 15.52 13.55 11.48 9.5 15.52 5.45"/>
+                <g class="svg-close-icon" style="display:none;">
+                    <path d="M14.23 12.791 6.497 5.058 5.301 6.253l7.734 7.734 1.195-1.196Z"/><path d="m6.497 13.987 7.733-7.734-1.195-1.195-7.734 7.733 1.196 1.196Z"/>
+                </g>
             </svg>
         </div>
 
