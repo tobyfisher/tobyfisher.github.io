@@ -1,0 +1,47 @@
+@use "vars" as *;
+@use "mixins" as *;
+
+.footer-content {
+	margin: 0 auto;
+	padding: $content-pad;
+	max-width: $content-width;
+
+	@include flex( flex-start, space-between);
+	gap:40px;
+
+	@include font-size(10);
+
+	h5 {
+		padding:0 0 5px 0;
+		@include font-size(10);
+	}
+
+	a {
+		display: block;
+		color:#555;
+		text-decoration: none;
+		@include font-size(12);
+	}
+
+	// 3 sections
+	.ft-contact,
+	.ft-nav {
+		flex: 1 1 0;
+		padding:0 0 0 $content-pad;
+		border-left: 1px dotted #999;
+	}
+
+	.ft-brand {
+		flex: 2 1 0;
+	}
+
+	@include collapseNav(){
+		flex-direction: column-reverse;
+		.ft-contact,
+		.ft-nav {
+			padding:0 0 0 $content-pad-small;
+			border-left: 1px dotted #999;
+		}
+	}
+
+}

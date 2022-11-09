@@ -8,7 +8,7 @@ title: Implementations
 </header>
 
 <section class="ctr">
-    <div class="logo-grid">
+    <div class="logo-grid" id="js-enterprise-logos">
         {% for user in site.oeusers %}
             {% if user.type == "Enterprise" %}
                 <img alt="{{ user.name }}" src="/assets/img/user-logos/{{ user.logo }}">
@@ -29,7 +29,7 @@ title: Implementations
     </div>
 </section>
 
-<section class="ctr-content" id="accredited-service-provider">
+<section class="ctr-content a-hook" id="accredited-service-provider">
     <h3><b>Accredited Service Providers</b> of OpenEyes</h3>
     <div class="f-c-split">
         <div class="wide">
@@ -63,16 +63,16 @@ title: Implementations
                 <td>{{ user.type }}</td>
                 <td><a href="{{ user.www }}" target="_blank">{{ user.name }}</a></td>
                 <td>
-                    <img class="service-partner-logo"
-                            {% case user.partnercode %}
-                                {% when "mdit" %}
-                                    src="/assets/img/supplier-logos/{{ site.data.suppliers.mdit.logo }}"
-                                {% when "abehr" %}
-                                    src="/assets/img/supplier-logos/{{ site.data.suppliers.abehr.logo }}"
-                                {% else %}
-                                    src="/assets/img/supplier-logos/{{ site.data.suppliers.tkl.logo }}"
-                            {% endcase %}
-                    >
+                    {% comment %} Default to TKL logo {% endcomment %}
+                    {% assign logoSrc = site.data.suppliers.tkl.logo %}
+                    {% case user.partnercode %}
+                        {% when "mdit" %}
+                            {% assign logoSrc = site.data.suppliers.mdit.logo %}
+                        {% when "abehr" %}
+                            {% assign logoSrc = site.data.suppliers.abehr.logo %}
+                    {% endcase %}
+
+                    <img class="service-partner-logo" src="/assets/img/supplier-logos/{{ logoSrc }}">
                 </td>
             </tr>
         {% endfor %}

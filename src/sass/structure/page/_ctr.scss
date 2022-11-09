@@ -9,5 +9,12 @@
 .ctr-content {
 	max-width: $content-width;
 	margin:0 auto;
-	padding: $content-pad-small $content-pad;
+	padding: $content-pad;
+
+	// if anchor linking into a page
+	// it will be hidden behind the header banner
+	// this shifts the area down
+	&.a-hook {
+		padding-top: #{$content-pad + $header-height};
+	}
 }

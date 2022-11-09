@@ -1,0 +1,17 @@
+@use "mixins" as *;
+.ft-brand {
+	// Openeyes SVG
+	.logotype {
+		width: 120px;
+		fill: #888;
+		margin:0 0 10px 0;
+	}
+
+	.legals {
+		@include font-size(9);
+
+		li {
+			margin:0 0 5px 0;
+		}
+	}
+}
