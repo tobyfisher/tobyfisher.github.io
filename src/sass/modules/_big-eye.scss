@@ -1,0 +1,12 @@
+@use "mixins" as *;
+.big-eye{
+	@include flex(center, center);
+	height: max( 30vh, 300px);
+	background: center / cover url('/assets/img/home/big-eye.jpg') #C3BDC0 no-repeat;
+
+	.lts-version {
+		font-size: max( 10vw, 3rem);
+		font-weight: 300;
+		color:#fff;
+	}
+}
