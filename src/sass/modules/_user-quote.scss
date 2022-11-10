@@ -1,0 +1,57 @@
+@use "vars" as *;
+@use "mixins" as *;
+// <figure>
+.user-quote {
+	background: hsl(330, 5%, 85%);
+	font: 400 italic 2rem/1.5 "Merriweather", serif;
+	padding: $content-pad 0;
+
+	blockquote {
+		position: relative;
+		padding: 0 180px 20px 0;
+
+		img {
+			position: absolute;
+			bottom:0;
+			right:10px;
+
+			width:150px;
+			height: 150px;
+			border-radius: 50%;
+			object-fit: cover;
+
+			border: 5px solid var(--bg-html);
+		}
+
+		&::before {
+			content: "\201C";
+			position: absolute;
+			top:-20px;
+			left:-100px;
+			@include font-size(160);
+			line-height: 1;
+			color: hsl(330, 5%, 95%);
+		}
+	}
+
+	figcaption {
+		@include font-size(12);
+		padding: 0 180px 0 0;
+	}
+
+	@include collapseNav(){
+		padding: $content-pad $content-pad-small;
+		font-size: 1.2rem;
+		blockquote {
+			padding: 40px 0 150px 0;
+			&::before {
+				@include font-size(120);
+				left:0;
+			}
+		}
+		figcaption {
+			padding: 20px 0 0 0 ;
+		}
+
+	}
+}
