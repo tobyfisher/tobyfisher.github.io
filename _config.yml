@@ -20,6 +20,7 @@ kramdown:
 
 # collections
 collections:
- - oeusers
+  oeusers:
+    output: true
 
 
