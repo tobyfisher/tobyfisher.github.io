@@ -1,4 +1,5 @@
 @use "vars" as *;
+@use "mixins" as *;
 .promos {
 	max-width: $content-width;
 	margin:0 auto;
@@ -7,5 +8,9 @@
 	display: grid;
 	grid: auto-flow / repeat( auto-fit, minmax(300px, 1fr));
 	gap:$content-pad;
+
+	@include collapseNav(){
+		padding: $content-pad;
+	}
 
 }
