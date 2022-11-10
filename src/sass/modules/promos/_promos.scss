@@ -10,7 +10,7 @@
 	gap:$content-pad;
 
 	@include collapseNav(){
-		padding: $content-pad;
+		padding: $content-pad $content-pad-small;
 	}
 
 }

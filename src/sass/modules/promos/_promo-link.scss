@@ -3,13 +3,13 @@
 // <a>
 .promo-link {
 	display: block;
-	background: bottom 15px right 15px / 30px url('/assets/svg/i/go.svg') hsl(329, 3%, 65%) no-repeat;
+	background: bottom 15px right 15px / 25px url('/assets/svg/i/go.svg') hsl(329, 3%, 65%) no-repeat;
 	@include font-size(22);
 	font-weight: 300;
 	line-height: 1.3;
 	color: white;
 	text-decoration: none;
-	padding: 20px 20px 60px 20px;
+	padding: 20px 20px 50px 20px;
 	border-radius: 10px;
 
 	transition: background-color 0.5s ease-in-out;
@@ -23,5 +23,9 @@
 	&:active {
 		outline: 1px dotted var(--btn-blue);
 		outline-offset: 1px;
+	}
+
+	@include collapseNav(){
+		@include font-size(20);
 	}
 }
