@@ -24,10 +24,6 @@ kramdown:
 collections_dir: oe_collections
 
 collections:
-  - subcommittees
-  - directors
-  - members
-  - products
   - oeusers
 
 
