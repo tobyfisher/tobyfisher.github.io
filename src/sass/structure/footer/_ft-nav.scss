@@ -1,4 +1,13 @@
 @use "vars" as *;
-.ft-nav {
+@use "mixins" as *;
 
+.ft-nav {
+	.footer-nav {
+		a {
+			display: block;
+			margin:0 0 8px 0;
+			text-decoration: none;
+			@include font-size(11);
+		}
+	}
 }

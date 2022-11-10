@@ -8,9 +8,10 @@
 	}
 
 	.legals {
+		padding:30px 10px 0 0;
 		@include font-size(9);
-
 		li {
+			line-height: 1.2;
 			margin:0 0 5px 0;
 		}
 	}

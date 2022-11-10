@@ -4,13 +4,14 @@ a {
 
 	&:hover,
 	&:focus {
-		color:aqua;
+		color:var(--btn-blue);
 		text-decoration: none;
 	}
 
 	&:active {
-		color:#fff;
-		background:lightcyan;
+		color:#00f;
+		outline: 1px dotted var(--btn-blue);
+		outline-offset: 1px;
 	}
 }
 
