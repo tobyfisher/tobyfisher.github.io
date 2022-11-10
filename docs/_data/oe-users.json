@@ -1,16 +1,128 @@
 [
   {
     "name": "Athens EyeCare Clinic",
+    "www": "athenseyecare.gr",
     "type": "Enterprise",
-    "www": "https://athenseyecare.gr",
     "logo": "athens-eyecare-clinic.png",
     "partnercode": "mdit"
   },
   {
     "name": "Barnsley Hospital NHS Foundation Trust",
+    "www": "www.barnsleyhospital.nhs.uk/",
     "type": "Enterprise",
-    "www": "https://www.barnsleyhospital.nhs.uk/",
     "logo": "barnsley.png",
     "partnercode": "tkl"
+  },
+  {
+    "name": "Bolton NHS Foundation Trust",
+    "www": "www.boltonft.nhs.uk/",
+    "type": "Enterprise",
+    "logo": "bolton.png",
+    "partnercode": "abher"
+  },
+  {
+    "name": "Cardiff and Vale University Health Board",
+    "www": "www.cardiffandvaleuhb.wales.nhs.uk/home",
+    "type": "Enterprise",
+    "logo": "cardiff.png",
+    "partnercode": "tkl"
+  },
+  {
+    "name": "Centre for Eye Research",
+    "www": "www.cera.org.au/",
+    "type": "Enterprise",
+    "logo": "cera.png",
+    "partnercode": "tkl"
+  },
+  {
+    "name": "Cornea Foundation",
+    "www": "www.thecorneafoundation.org/",
+    "type": "Community",
+    "logo": "cornea-foundation.png",
+    "partnercode": "tkl"
+  },
+  {
+    "name": "East Kent Hospital University NHS Foundation Trust",
+    "www": "www.ekhuft.nhs.uk/",
+    "type": "Enterprise",
+    "logo": "east-kent.png",
+    "partnercode": "abher"
+  },
+  {
+    "name": "Eye Center",
+    "www": "eye-center.gr",
+    "type": "Enterprise",
+    "logo": "eye-center.png",
+    "partnercode": "mdit"
+  },
+  {
+    "name": "eyecon",
+    "www": "www.eyecon.pk/",
+    "type": "Community",
+    "logo": "eyecon.png",
+    "partnercode": "tkl"
+  },
+  {
+    "name": "Guys & St Thomas NHS Foundation Trust",
+    "www": "www.guysandstthomas.nhs.uk/",
+    "type": "Enterprise",
+    "logo": "gstt.png",
+    "partnercode": "abher"
+  },
+  {
+    "name": "Kingston Hospital NHS Foundation Trust",
+    "www": "kingstonhospital.nhs.uk/",
+    "type": "Enterprise",
+    "logo": "kingston-logo.png",
+    "partnercode": "tkl"
+  },
+  {
+    "name": "LRBT",
+    "www": "www.lrbt.org.pk/",
+    "type": "Community",
+    "logo": "lrbt.png",
+    "partnercode": "tkl"
+  },
+  {
+    "name": "Maidstone and Tunbridge Wells NHS Trust",
+    "www": "www.mtw.nhs.uk/",
+    "type": "Enterprise",
+    "logo": "mtw.png",
+    "partnercode": "abher"
+  },
+  {
+    "name": "Moorfields Eye Hospital NHS Foundation Trust",
+    "www": "www.moorfields.nhs.uk/",
+    "type": "Enterprise",
+    "logo": "meh.png",
+    "partnercode": "tkl"
+  },
+  {
+    "name": "NHS Scotland",
+    "www": "www.scot.nhs.uk/",
+    "type": "Enterprise",
+    "logo": "nhs-scotland-enterprise.png",
+    "partnercode": "tkl"
+  },
+  {
+    "name": "Northern Care Alliance NHS Group",
+    "www": "www.pat.nhs.uk",
+    "type": "Enterprise",
+    "logo": "nca.png",
+    "partnercode": "tkl"
+  },
+  {
+    "name": "West Suffolk NHS Foundation Trust",
+    "www": "www.wsh.nhs.uk/",
+    "type": "Enterprise",
+    "logo": "wsh.png",
+    "partnercode": "abher"
+  },
+  {
+    "name": "Worcestershire Acute Hospitals NHS Trust",
+    "www": "www.worcsacute.nhs.uk/",
+    "type": "Enterprise",
+    "logo": "waht.png",
+    "partnercode": "abher"
   }
 ]

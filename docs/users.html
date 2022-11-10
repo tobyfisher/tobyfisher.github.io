@@ -9,7 +9,7 @@ title: Implementations
 
 <section class="ctr">
     <div class="logo-grid" id="js-enterprise-logos">
-        {% for user in site.oeusers %}
+        {% for user in site.data.oe-users %}
             {% if user.type == "Enterprise" %}
                 <img alt="{{ user.name }}" src="/assets/img/user-logos/{{ user.logo }}">
             {% endif %}
@@ -21,7 +21,7 @@ title: Implementations
 
 <section class="ctr">
     <div class="logo-grid">
-        {% for user in site.oeusers %}
+        {% for user in site.data.oe-users %}
             {% if user.type == "Community" %}
                 <img alt="{{ user.name }}" src="/assets/img/user-logos/{{ user.logo }}">
             {% endif %}
@@ -58,7 +58,7 @@ title: Implementations
         </tr>
         </thead>
         <tbody>
-        {% for user in site.oeusers %}
+        {% for user in site.data.oe-users %}
             <tr>
                 <td>{{ user.type }}</td>
                 <td><a href="{{ user.www }}" target="_blank">{{ user.name }}</a></td>
