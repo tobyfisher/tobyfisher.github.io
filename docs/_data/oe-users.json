@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Athens EyeCare Clinic",
+    "type": "Enterprise",
+    "www": "https://athenseyecare.gr",
+    "logo": "athens-eyecare-clinic.png",
+    "partnercode": "mdit"
+  },
+  {
+    "name": "Barnsley Hospital NHS Foundation Trust",
+    "type": "Enterprise",
+    "www": "https://www.barnsleyhospital.nhs.uk/",
+    "logo": "barnsley.png",
+    "partnercode": "tkl"
+  }
+]

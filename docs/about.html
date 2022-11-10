@@ -7,24 +7,10 @@ title: About OpenEyes
 </header>
 
 <section class="ctr-content">
-    {{ site.time }}
-
-    {{ site.collections }}
-
     <p>
-        {% for user in site.oeusers %}
-            {{ user.name }},
-        {% endfor %}
-    </p>
-
-    <p>
-        {% for who in site.fuck %}
-            {{ who.name }},
-        {% endfor %}
-    </p>
-    <p>
-        {% for sup in site.data.suppliers %}
-            {{ sup }}
+        {% for sup in site.data.oe-users %}
+            <br>
+            {{ sup.name }}
         {% endfor %}
     </p>
 
