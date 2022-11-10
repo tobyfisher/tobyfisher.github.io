@@ -1,0 +1,11 @@
+@use "vars" as *;
+.promos {
+	max-width: $content-width;
+	margin:0 auto;
+	padding: #{$content-pad + $content-pad} 0;
+
+	display: grid;
+	grid: auto-flow / repeat( auto-fit, minmax(300px, 1fr));
+	gap:$content-pad;
+
+}
