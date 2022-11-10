@@ -19,9 +19,8 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-
 # collections
 collections:
-  - oeusers
+ - oeusers
 
 

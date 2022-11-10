@@ -5,3 +5,13 @@ title: About OpenEyes
 <header class="page-hd">
     <h2>{{ page.title }} - (still to do)</h2>
 </header>
+
+<section class="ctr-content">
+    {{ site.collections }}
+
+    <p>
+        {% for user in site.oeusers %}
+            {{ user.name }}, 
+        {% endfor %}
+    </p>
+</section>
