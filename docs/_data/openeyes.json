@@ -5,7 +5,7 @@
   "github": "appertafoundation/openeyes",
   "meta": {
     "desc":"OpenEyes™ is an Electronic Medical Record (EMR) application for ophthalmology, which enables clinicians to access all of the information they need about their patients in one place.",
-    "keywords": "OpenEyes, Apperta OpenEyes, OpenEyes ophthalmology, OpenEyes EPR, OpenEyes Foundation",
+    "keywords": "OpenEyes, Apperta OpenEyes, OpenEyes ophthalmology, OpenEyes EPR, OpenEyes Foundation"
   },
   "app": {
     "lts": "6.4"
