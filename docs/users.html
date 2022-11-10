@@ -61,7 +61,7 @@ title: Implementations
         {% for user in site.data.oe-users %}
             <tr>
                 <td>{{ user.type }}</td>
-                <td><a href="{{ user.www }}" target="_blank">{{ user.name }}</a></td>
+                <td><a href="//{{ user.www }}" target="_blank">{{ user.name }}</a></td>
                 <td>
                     {% comment %} Default to TKL logo {% endcomment %}
                     {% assign logoSrc = site.data.suppliers.tkl.logo %}
