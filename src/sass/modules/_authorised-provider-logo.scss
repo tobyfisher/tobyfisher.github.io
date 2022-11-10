@@ -2,10 +2,11 @@
 
 // <img>
 .authorised-provider-logo {
-	width: 300px;
-	height: 200px;
+	width: 280px;
+	height: 150px;
 	object-fit: scale-down;
 	padding: $content-pad-small;
+	margin:0 auto;
 	background: #fff;
 	border-radius: 10px;
 }

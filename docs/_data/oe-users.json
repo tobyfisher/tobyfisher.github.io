@@ -18,7 +18,7 @@
     "www": "www.boltonft.nhs.uk/",
     "type": "Enterprise",
     "logo": "bolton.png",
-    "partnercode": "abher"
+    "partnercode": "abehr"
   },
   {
     "name": "Cardiff and Vale University Health Board",
@@ -46,7 +46,7 @@
     "www": "www.ekhuft.nhs.uk/",
     "type": "Enterprise",
     "logo": "east-kent.png",
-    "partnercode": "abher"
+    "partnercode": "abehr"
   },
   {
     "name": "Eye Center",
@@ -67,7 +67,7 @@
     "www": "www.guysandstthomas.nhs.uk/",
     "type": "Enterprise",
     "logo": "gstt.png",
-    "partnercode": "abher"
+    "partnercode": "abehr"
   },
   {
     "name": "Kingston Hospital NHS Foundation Trust",
@@ -88,7 +88,7 @@
     "www": "www.mtw.nhs.uk/",
     "type": "Enterprise",
     "logo": "mtw.png",
-    "partnercode": "abher"
+    "partnercode": "abehr"
   },
   {
     "name": "Moorfields Eye Hospital NHS Foundation Trust",
@@ -116,13 +116,13 @@
     "www": "www.wsh.nhs.uk/",
     "type": "Enterprise",
     "logo": "wsh.png",
-    "partnercode": "abher"
+    "partnercode": "abehr"
   },
   {
     "name": "Worcestershire Acute Hospitals NHS Trust",
     "www": "www.worcsacute.nhs.uk/",
     "type": "Enterprise",
     "logo": "waht.png",
-    "partnercode": "abher"
+    "partnercode": "abehr"
   }
 ]

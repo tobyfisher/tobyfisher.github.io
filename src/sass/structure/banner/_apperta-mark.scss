@@ -1,0 +1,21 @@
+@use "vars" as *;
+@use "mixins" as *;
+
+.apperta-mark {
+	position: absolute;
+	top:0;
+	left:0;
+	width:10vw;
+	height: $header-height;
+	background: center / cover url('/assets/svg/apperta-mark.svg') no-repeat;
+
+	transition: opacity 1s ease-in-out;
+
+	@media only screen and (max-width: 1200px) {
+		opacity: 0.2;
+	}
+
+	@include collapseNav(){
+		display: none;
+	}
+}

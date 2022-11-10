@@ -65,12 +65,12 @@ title: Implementations
                 <td>
                     {% comment %} Default to TKL logo {% endcomment %}
                     {% assign logoSrc = site.data.suppliers.tkl.logo %}
-                    {% case user.partnercode %}
-                        {% when "mdit" %}
-                            {% assign logoSrc = site.data.suppliers.mdit.logo %}
-                        {% when "abehr" %}
-                            {% assign logoSrc = site.data.suppliers.abehr.logo %}
-                    {% endcase %}
+                    {% if user.partnercode == "abehr" %}
+                        {% assign logoSrc = site.data.suppliers.abehr.logo %}
+                    {% endif %}
+                    {% if user.partnercode == "mdit" %}
+                        {% assign logoSrc = site.data.suppliers.mdit.logo %}
+                    {% endif %}
 
                     <img class="service-partner-logo" src="/assets/img/supplier-logos/{{ logoSrc }}">
                 </td>

@@ -28,49 +28,7 @@
     <!-- freshness:  {{ site.time }} -->
 </head>
 <body>
-<header class="site-banner" role="banner">
-    <h1 class="visuallyhidden">{{ site.data.openeyes.name }}</h1>
-    <div class="lg-nv-hd">
-        <a href="/" aria-label="{{ site.data.openeyes.name }} logo">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 xml:space="preserve"
-                 stroke-linejoin="round"
-                 stroke-miterlimit="2"
-                 viewBox="0 0 321.98 59.73"
-                 class="logotype">
-				<title>OpenEyes</title>
-                {% include svg-logotype.html %}
-		    </svg>
-        </a>
-
-        <nav class="pages-nav" id="js-pages-nav">
-            {% for nav in site.data.page-navigation %}
-                {% comment %}
-                Note: Jekyll page.url will use a trailing slash BUT GitHub pages does not! FFS!
-                Github Pages does this: oe.org/users (this will 404: oe.org/users/)
-                btw: this is still there on ghPages: oe.org/users.html
-                {% endcomment %}
-                {% assign gitslug = page.name | remove: ".html" | prepend: "/" %}
-                <a href="{{ nav.url }}"{% if gitslug  == nav.url %} class="active"{% endif %}>{{ nav.btn }}</a>
-            {% endfor %}
-        </nav>
-
-        <!-- JS controlled overlay nav when navigation collapses down on smaller devices -->
-        <div class="pages-nav-menu-btn" id="js-menu-btn" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="nav-menu-btn">
-                <g class="svg-menu-icon">
-                    <rect x="5" y="6" width="10" height="1.5"/>
-                    <rect x="5" y="9" width="10" height="1.5"/>
-                    <rect x="5" y="12" width="10" height="1.5"/>
-                </g>
-                <g class="svg-close-icon" style="display:none;">
-                    <path d="M14.23 12.791 6.497 5.058 5.301 6.253l7.734 7.734 1.195-1.196Z"/><path d="m6.497 13.987 7.733-7.734-1.195-1.195-7.734 7.733 1.196 1.196Z"/>
-                </g>
-            </svg>
-        </div>
-
-    </div>
-</header>
+{% include header.html %}
 <main>
     {{ content }}
 </main>
