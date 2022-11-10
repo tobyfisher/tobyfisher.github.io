@@ -21,8 +21,6 @@ kramdown:
 
 
 # collections
-collections_dir: oe_collections
-
 collections:
   - oeusers
 
