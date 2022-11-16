@@ -24,23 +24,15 @@ title: OE
     <a href="/governance" class="promo-link">
         An app that combines Clinicians, informaticians and IT experts in-depth knowledge of clinical Ophthalmology
     </a>
-    <a href="mailto:{{ site.data.openeyes.email }}?subject=OpenEyes%20website%20enquiry" class="promo-link">
-        Want to know more about OpenEyes?
-        <br>Drop us an email
-        <br><b>{{ site.data.openeyes.email }}</b>
-    </a>
+    {% include promo-email.html %}
 </section>
 
-<figure class="user-quote">
-    <div class="ctr">
-        <blockquote>
-            OpenEyes enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            <img src="/assets/img/people/james-morgan.jpg" alt="Prof. James Morgan">
-        </blockquote>
-
-        <figcaption>Prof. James Morgan, MA DPhil FRCOphth, Professor of Ophthalmology, Hon Consultant Ophthalmologist Cardiff</figcaption>
-    </div>
-</figure>
+{% include user-quote.html
+        who="Prof. James Morgan"
+        postnominals="MA DPhil FRCOphth, Professor of Ophthalmology, Hon Consultant Ophthalmologist Cardiff"
+        photo="james-morgan.jpg"
+        quote="OpenEyes enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate"
+%}
 
 <section class="ctr-content">
     <h3>OpenEyes: Open Source EPR for Ophthalmology</h3>
